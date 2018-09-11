@@ -1,0 +1,131 @@
+<html>
+<style>
+body
+{
+  margin: 0;
+  padding: 0;
+  background: url(pic02.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+.loginBox
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  height: 500px;
+  background: rgba(0,0,0,.6);
+}
+.user 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+h2
+{
+  margin: 0;
+  padding: 0 0 20px;
+  color: #efed40;
+  text-align: center;
+}
+.loginBox p
+{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+.loginBox input
+{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="Password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  height: 40px;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+::placeholder
+{
+  color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background: #ff267e;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+  background: #efed40;
+  color: #262626;
+}
+.loginBox a
+{
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+</style>
+<!doctype html>
+<html>
+  <head>
+  <script type="text/javascript">
+  function redirect()
+  {
+    if( document.myForm.Name.value == "" )
+         {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return 0;
+         }
+    if( document.myForm.Sad.value == "" )
+         {
+            alert( "Please provide your Start Address!" );
+            return 0;
+         }
+    if( document.myForm.Dad.value == "" )
+         {
+            alert( "Please provide your Destination!" );
+            return 0;
+         }
+    else
+    	return 1;
+  }
+  </script>
+  </head>
+  <body>
+    <div class="loginBox">
+      <h2>LOGIN</h2>
+      <form name="myForm" action=
+      "https://www.wishfin.com/cibil-score";">
+        <p>UserName</p>
+        <input type="text"name="Name">
+        <p>Password</p>
+        <input type="Password" name="passkey">
+        <input type="submit" name="" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
